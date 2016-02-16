@@ -1,0 +1,86 @@
+body,html {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+ height: 100vh;
+ display: flex;
+ flex-flow: column wrap;
+ justify-content: space-between;
+ background-image: url('images/stardust.png');
+ background-size: cover;
+ align-items: center;
+ color: #fff;
+ padding-bottom: 30px;
+}
+
+.sub-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  align-items: center;
+}
+.logo {
+  flex-grow: 1;
+}
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.kicker > img {
+  height: 180px;
+  width: 300px;
+}
+form > * {
+  float: left;
+  padding: 10px;
+}
+
+input {
+  border: none;
+  box-shadow: none;
+}
+input:active, input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  box-shadow: none;
+  background-color:
+}
+button:active, button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.para {
+  font-size: 30px;
+}
+
+.kicker {
+  text-align: center;
+}
