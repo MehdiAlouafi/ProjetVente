@@ -1,0 +1,19 @@
+@import url('css/button.css');
+@import url('css/card.css');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+body
+{
+	background: lightgrey;
+
+}
+
+a
+{
+	margin-left: 20px;
+}
+
+hr
+{
+	margin-top: 30px;
+}
