@@ -126,3 +126,20 @@ p.contact-para {
 .form-contact > *:focus  {
   box-shadow: 0 0 10px #BE1622;
 }
+
+.btn-submit-contact {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #BE1622;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(190, 22, 34, 0.5);
+
+}
+
+.btn-submit-contact:hover {
+  box-shadow: 0 0 15px rgba(190, 22, 34, 1);
+}
