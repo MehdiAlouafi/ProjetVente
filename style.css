@@ -163,3 +163,42 @@ opacity: 1;
 a.btn.btn-hover {
   left:46px;
 }
+
+.promises
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.promise
+{
+	text-align: center;
+	min-width: 250px;
+}
+
+footer
+{
+	background-color: #222;
+	padding: 10px;
+}
+
+footer .content
+{
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+footer .content > *
+{
+	display: inline-block;
+}
+
+footer .copyright
+{
+	text-align: right;
+	align-self: flex-end;
+}
