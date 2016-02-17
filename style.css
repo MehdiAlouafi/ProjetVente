@@ -13,8 +13,7 @@ header {
  display: flex;
  flex-flow: column wrap;
  justify-content: space-between;
- background-image: url('images/stardust.png');
- background-size: cover;
+ background-image: linear-gradient(rgba(#BE1622,0.5),rgba(0,0,0,0.5)), url('images/stardust.png');
  align-items: center;
  color: #fff;
  padding-bottom: 30px;
@@ -71,7 +70,12 @@ input:active, input:focus {
 button {
   border: none;
   box-shadow: none;
-  background-color:
+  background-color: #BE1622;
+  color: #fff;
+  font-family: ONEDAY;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border-radius: 0 5px 5px 0;
 }
 button:active, button:focus {
   outline: none;
@@ -84,4 +88,26 @@ button:active, button:focus {
 
 .kicker {
   text-align: center;
+}
+
+.best-seller {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  height: 100vh;
+}
+
+.carte-favoris {
+  margin-top: 20px;
+  position: relative;
+}
+
+form input {
+  width: 300px;
+  padding: 15px;
+  border-radius: 5px 0 0 5px;
+}
+
+form button {
+  line-height: 2.1;
 }
