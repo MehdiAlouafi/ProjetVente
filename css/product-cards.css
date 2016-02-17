@@ -1,0 +1,136 @@
+body,html {
+  padding: 0;
+  margin: 0;
+
+}
+
+* {
+  box-sizing: border-box;
+  font-family: ONEDAY;
+}
+
+body {
+  background: #2D2D2D;
+}
+
+.main-content {
+  width: 700px;
+  height: 500px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 4px;
+  position: relative;
+  background-image: linear-gradient(rgba(55, 63, 81,0.4),rgba(0, 0, 0,0.5))
+  , url('http://media.dcentertainment.com/sites/default/files/GalleryChar_1920x1080_BM_Cv38_54b5d0d1ada864.04916624.jpg');
+  background-size: cover;
+  background-position: 100% 100%;
+  box-shadow: 0 0 50px black;
+}
+
+.main-content-details {
+  position: absolute;
+  background-color: rgb(239, 237, 237);
+  top: 25px;
+  right: -70px;
+  height: 450px;
+  width: 300px;
+  padding: 10px 30px;
+  color: #bac7c9;
+  /*box-shadow: 0 0 30px rgba(239, 237, 237,0.3);*/
+  border-radius: 2px;
+  animation: pulse 2s infinite;
+
+}
+svg {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: 10px;
+  bottom: 10px;
+}
+
+.stars {
+  top: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+h2 {
+  color: #008DD5;
+  text-align: right;
+}
+
+p {
+  color: #666;
+  font-family: monospace;
+  font-size: 18px;
+  text-align: justify;
+  padding-top: 15px;
+}
+/* line 1, ../sass/style.sass */
+
+/* line 7, ../sass/style.sass */
+
+/* line 12, ../sass/style.sass */
+
+/* line 16, ../sass/style.sass */
+.first-button a {
+  margin-top: 20px;
+  display: inline-block;
+  height: 50px;
+  width: 180px;
+  background-color: #3498db;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  line-height: 3.3;
+  border-radius: 10px;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  font-family: "Varela Round", sans-serif;
+  transition: box-shadow 0.6s ease;
+  color: #fff;
+}
+/* line 32, ../sass/style.sass */
+ a .main {
+  text-transform: uppercase;
+  position: relative;
+  bottom: 0%;
+  font-weight: 900;
+  -webkit-transition: all 0.4s ease;
+}
+a:hover {
+  box-shadow: 0px 0px 10px #2980b9;
+
+}
+/* line 41, ../sass/style.sass */
+ a .hover img {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 100%;
+  left: 65px;
+  transition: top 0.5s ease;
+  padding-top: 10px;
+}
+/* line 50, ../sass/style.sass */
+a:hover .main {
+  position: relative;
+  bottom: 100%;
+}
+/* line 53, ../sass/style.sass */
+ a:hover img {
+  top: 0;
+}
+
+.first-button {
+  text-align: center;
+}
+@keyframes pulse {
+  0% {box-shadow: 0 0 0 white}
+  50%{box-shadow: 0 0 30px rgba(239, 237, 237,0.3);
+  }
+  100% {box-shadow: 0 0 0 white}
+
+}
