@@ -1,0 +1,56 @@
+.sub-block.contact-nav {
+  background-color: #edefed;
+  height: 100px;
+  padding-bottom: 0px !important;
+  border: none;
+  box-shadow: 0 0 50px black;
+}
+.sub-block.contact-nav a {
+  color: black;
+  padding: 10px 10px 27px 10px;
+  transition: border 0.1s ease;
+}
+.sub-block.contact-nav a:hover {
+  border-bottom: 4px solid #BE1622;
+}
+
+h2.contact-title {
+  color: #E1E6E1;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 30px;
+  position: relative;
+
+}
+
+h2.contact-title:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  top: 25px;
+  left: 90px;
+  height: 5px;
+  width: 30%;
+  border-radius: 10px;
+  background-color: DimGray;
+}
+
+h2.contact-title:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  top: 25px;
+  right: 90px;
+  height: 5px;
+  width: 30%;
+  background-color: DimGray;
+  border-radius: 10px;
+
+}
+p.contact-para {
+  text-align: center;
+  max-width: 940px;
+  margin: 0 auto;
+  font-weight: bolder;
+  color: DimGray;
+}
