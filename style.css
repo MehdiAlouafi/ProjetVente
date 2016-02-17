@@ -1,5 +1,13 @@
 @import url('css/product-cards.css');
 @import url('css/contact.css');
+@font-face {
+	font-family: 'OneDay';
+	src:url('font/ONEDAY.otf') format('otf'),
+	    url('font/ONEDAY.woff') format('woff'),
+	    url('font/ONEDAY.woff2') format('woff2'),
+	    url('font/ONEDAY.ttf') format('truetype');
+}
+
 body,html {
   margin: 0;
   padding: 0;
@@ -54,7 +62,7 @@ a {
   height: 180px;
   width: 300px;
 }
-form > * {
+header form > * {
   float: left;
   padding: 10px;
 }
@@ -109,13 +117,13 @@ button:active, button:focus {
   position: relative;
 }
 
-form input {
+header form input {
   width: 300px;
   padding: 15px;
   border-radius: 5px 0 0 5px;
 }
 
-form button {
+header form button {
   line-height: 2.1;
 }
 .best-seller > h2 {
