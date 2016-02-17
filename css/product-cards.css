@@ -110,7 +110,7 @@ svg {
   font-weight: 900;
   -webkit-transition: all 0.4s ease;
 }
-a:hover {
+a.first-button:hover {
   box-shadow: 0px 0px 10px #2980b9;
 
 }

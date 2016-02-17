@@ -89,12 +89,18 @@ button:active, button:focus {
 .kicker {
   text-align: center;
 }
-
 .best-seller {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.carte-flex{
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
-  height: 100vh;
+  min-height: 500px;
+  box-shadow: 0 0 30px black;
+  padding: 20px 0;
 }
 
 .carte-favoris {
@@ -110,4 +116,49 @@ form input {
 
 form button {
   line-height: 2.1;
+}
+.best-seller > h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFf;
+  letter-spacing: 2px;
+}
+.carte-favoris-thumbnail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: blue;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('http://img07.deviantart.net/ac86/i/2010/058/f/5/deadpool_by_mjfletcher.jpg');
+  background-position: 20% 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.carte-favoris-thumbnail.deadpool {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('http://img09.deviantart.net/d463/i/2006/188/b/2/samurai_champloo_vector_2_by_socketto.jpg');
+}
+.carte-favoris{
+  position: relative;
+  cursor: pointer;
+}
+.carte-favoris:hover .carte-favoris-thumbnail {
+opacity: 1;
+}
+.product-grid {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 10px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.card {
+  height: 250px;
+  width: 250px;
+  background-color: #FFF;
+  margin: 10px;
+}
+
+a.btn.btn-hover {
+  left:46px;
 }
