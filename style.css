@@ -5,6 +5,7 @@
 @import url('css/product-cards.css');
 @import url('css/contact.css');
 @import url('css/whoweare.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,700');
 @font-face {
 	font-family: 'OneDay';
 	src:url('font/ONEDAY.otf') format('otf'),
@@ -135,14 +136,18 @@ button:active, button:focus {
   position: relative;
 }
 
-header form input {
+header .form-index input {
   width: 300px;
-  padding: 15px;
   border-radius: 5px 0 0 5px;
+	padding: 20px;
+	background-color: black;
 }
 
 header form button {
-  line-height: 2.1;
+	font-size: 14px;
+  line-height: 1.4;
+	font-family: 'Open Sans';
+	font-weight: lighter;
 }
 .best-seller > h2 {
   text-align: center;
@@ -306,4 +311,9 @@ footer .copyright
 
 #logo-header:hover {
 	border: none;
+}
+
+.active {
+		border-bottom: 4px solid #BE1622 !important;
+
 }
