@@ -1,0 +1,87 @@
+@import url("css/product-cards.css");
+@import url("css/avatar.css");
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+    color: #999;
+    font-size: 14px;
+}
+
+
+/* rules for all containers */
+
+.container {
+    background-color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    border-bottom: #999 solid 1px;
+}
+
+.container img {
+    margin-right: 10px;
+}
+
+
+/* display "2 comments" with big letters */
+
+.container-title h1 {
+    color: #bac7c9;
+    font-weight: 100;
+}
+
+
+/* display avatar and input to enter a new comment */
+
+.container-input {
+    background-color: #EFEDED;
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+}
+
+.container-input input {
+    flex-grow: 1;
+}
+
+input {
+    margin: 0;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    background-color: #3498DB;
+    height: 30px;
+    padding: 5px 10px;
+    border: 1px solid #3498DB;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+/* display comments */
+
+.container-comment {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-comment .identity {
+    display: flex;
+    align-items: center;
+}
+
+.comment-content {
+    margin-bottom: 50px;
+}
