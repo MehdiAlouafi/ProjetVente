@@ -1,0 +1,224 @@
+/*-------------*\
+  $General
+\*-------------*/
+
+body {
+  background-color: #262626;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 20px 0;
+}
+
+h4, p, a {
+  font-family: cursive;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/*---------------*\
+  $Header
+\*---------------*/
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+nav ul {
+  flex-flow: row wrap;
+}
+
+nav li {
+  margin: 10px;
+}
+
+.separation {
+  border-bottom: 1px solid #1a1a1a;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: box-shadow 0.3s ease;
+  border: none;
+  border-radius: 50px;
+  padding: 0 5px;
+  transition: padding 0.3s ease;
+}
+
+nav a:hover {
+  box-shadow: 0 0 30px white;
+  border: none;
+  border-radius: 50px;
+  padding: 3px 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+
+/*---------------*\
+  $Section 1
+\*---------------*/
+
+.element-position {
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin: 20px 0;
+}
+
+.user-cart {
+  align-items: center;
+  padding: 0;
+}
+
+.user-cart li {
+  margin-right: 20px;
+}
+
+.payment {
+  flex-wrap: wrap;
+}
+
+.payment li > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px;
+  color: black;
+}
+
+
+
+
+
+/*---------------*\
+  $Section 2
+\*---------------*/
+
+.product-position {
+  flex-flow: row wrap;
+}
+
+.product-display {
+  min-width: 250px;
+  min-height: 250px;
+  max-width: 340px;
+  max-height: 340px;
+  width: 34vw;
+  height:34vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-display:hover {
+  box-shadow: 0 0 60px #000;
+}
+
+.product-display i {
+  align-self: flex-start;
+  color: #e6e6e6;
+  margin: 10px;
+}
+
+.card-down {
+  width: 100%;
+  display: flex;
+  flex-flow:  row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-display a {
+  color: #000;
+  background-color: rgb(190, 22, 34);
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 100%;
+}
+
+.product-display p {
+  font-size: 20px;
+  font-weight: bold;
+  color:  #4d88ff;
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
+.link {
+  background-image: url(../images/link.jpg);
+  background-position: center;
+}
+
+.gta {
+  background-image: url(../images/gta.jpg);
+  background-position: center;
+}
+
+.witcher {
+  background-image: url(../images/witcher.png);
+  background-position: right;
+}
+
+/*---------------*\
+  $Mediaqueries
+\*---------------*/
+
+@media all and (max-width: 600px){
+  nav ul {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .element-position{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .payment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
