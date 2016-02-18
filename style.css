@@ -1,4 +1,7 @@
-@import url('css/media-query.css');
+@import url('css/normalize.css');
+@import url('css/avatar.css');
+@import url('css/cards-components.css');
+@import url('css/product-page.css');
 @import url('css/product-cards.css');
 @import url('css/contact.css');
 @font-face {
