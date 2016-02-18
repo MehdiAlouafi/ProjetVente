@@ -8,6 +8,14 @@
 	    url('font/ONEDAY.woff2') format('woff2'),
 	    url('font/ONEDAY.ttf') format('truetype');
 }
+::selection {
+  background: #BE1622;
+	color: #fff;/* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #BE1622;
+	color: #fff;/* Gecko Browsers */
+}
 .header-smartphone {
 display: none}
 #toggled {

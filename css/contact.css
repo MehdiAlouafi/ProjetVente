@@ -59,7 +59,7 @@ p.contact-para {
   height: 400px;
   position: relative;
   margin-top: 50px;
-  z-index: -10;
+  z-index: 5555;
 }
 
 .main-contact-content {
