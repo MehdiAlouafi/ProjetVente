@@ -4,6 +4,7 @@
 @import url('css/product-page.css');
 @import url('css/product-cards.css');
 @import url('css/contact.css');
+@import url('css/whoweare.css');
 @font-face {
 	font-family: 'OneDay';
 	src:url('font/ONEDAY.otf') format('otf'),
@@ -228,7 +229,10 @@ footer .copyright
 	align-self: flex-end;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 572px) {
+	.sub-block {
+		display: none;
+	}
   header {
     display: none !important;
   }
@@ -247,6 +251,7 @@ footer .copyright
 		display: flex;
 		justify-content: center;
 		align-items: flex-end;
+		padding: 20px;
 	}
 
 	.header-smartphone > i {
@@ -297,4 +302,8 @@ footer .copyright
 		left: 0;
 	}
 
+}
+
+#logo-header:hover {
+	border: none;
 }

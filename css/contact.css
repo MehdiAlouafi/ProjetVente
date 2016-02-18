@@ -69,6 +69,7 @@ p.contact-para {
   height: 100%;
   display: flex;
   flex-flow: row wrap;
+  padding: 20px;
 }
 
 .get-in-touch {
