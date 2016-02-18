@@ -1,0 +1,212 @@
+@import url('css/product-cards.css');
+@import url('css/contact.css');
+@font-face {
+	font-family: 'OneDay';
+	src:url('font/ONEDAY.otf') format('otf'),
+	    url('font/ONEDAY.woff') format('woff'),
+	    url('font/ONEDAY.woff2') format('woff2'),
+	    url('font/ONEDAY.ttf') format('truetype');
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+ height: 100vh;
+ display: flex;
+ flex-flow: column wrap;
+ justify-content: space-between;
+ background-image: linear-gradient(rgba(#BE1622,0.5),rgba(0,0,0,0.5)), url('images/stardust.png');
+ align-items: center;
+ color: #fff;
+ padding-bottom: 30px;
+}
+
+.sub-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  align-items: center;
+}
+.logo {
+  flex-grow: 1;
+}
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.kicker > img {
+  height: 180px;
+  width: 300px;
+}
+header form > * {
+  float: left;
+  padding: 10px;
+}
+
+input {
+  border: none;
+  box-shadow: none;
+}
+input:active, input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  box-shadow: none;
+  background-color: #BE1622;
+  color: #fff;
+  font-family: ONEDAY;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border-radius: 0 5px 5px 0;
+}
+button:active, button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.para {
+  font-size: 30px;
+}
+
+.kicker {
+  text-align: center;
+}
+.best-seller {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.carte-flex{
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  min-height: 500px;
+  box-shadow: 0 0 30px black;
+  padding: 20px 0;
+}
+
+.carte-favoris {
+  margin-top: 20px;
+  position: relative;
+}
+
+header form input {
+  width: 300px;
+  padding: 15px;
+  border-radius: 5px 0 0 5px;
+}
+
+header form button {
+  line-height: 2.1;
+}
+.best-seller > h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFf;
+  letter-spacing: 2px;
+}
+.carte-favoris-thumbnail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: blue;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('http://img07.deviantart.net/ac86/i/2010/058/f/5/deadpool_by_mjfletcher.jpg');
+  background-position: 20% 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.carte-favoris-thumbnail.deadpool {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('http://img09.deviantart.net/d463/i/2006/188/b/2/samurai_champloo_vector_2_by_socketto.jpg');
+}
+.carte-favoris{
+  position: relative;
+  cursor: pointer;
+}
+.carte-favoris:hover .carte-favoris-thumbnail {
+opacity: 1;
+}
+.product-grid {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 10px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.card {
+  height: 250px;
+  width: 250px;
+  background-color: #FFF;
+  margin: 10px;
+}
+
+a.btn.btn-hover {
+  left:46px;
+}
+
+.promises
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.promise
+{
+	text-align: center;
+	min-width: 250px;
+}
+
+footer
+{
+	background-color: #222;
+	padding: 10px;
+}
+
+footer .content
+{
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+footer .content > *
+{
+	display: inline-block;
+}
+
+footer .copyright
+{
+	text-align: right;
+	align-self: flex-end;
+}
