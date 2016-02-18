@@ -1,3 +1,4 @@
+@import url('css/media-query.css');
 @import url('css/product-cards.css');
 @import url('css/contact.css');
 @font-face {
@@ -6,6 +7,11 @@
 	    url('font/ONEDAY.woff') format('woff'),
 	    url('font/ONEDAY.woff2') format('woff2'),
 	    url('font/ONEDAY.ttf') format('truetype');
+}
+.header-smartphone {
+display: none}
+#toggled {
+	display: none;
 }
 
 body,html {
@@ -209,4 +215,75 @@ footer .copyright
 {
 	text-align: right;
 	align-self: flex-end;
+}
+
+@media screen and (max-width: 560px) {
+  header {
+    display: none !important;
+  }
+	.nav-smartphone ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.header-smartphone {
+		display: block;
+		height: 100vh;
+		/*background-color: blue;*/
+		background-image: url('images/SoGeekLogo.svg');
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+
+	.header-smartphone > i {
+		font-size: 50px;
+		color: #BE1622;
+	}
+	.the-toggler {
+		top: 36px;
+		left: 20px;
+		color: #fff;
+		position: fixed;
+		z-index: 9999;
+		cursor: pointer;
+
+
+	}
+  .nav-smartphone {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: -100%;
+		right: 0;
+		bottom: 0;
+		z-index: 7777;
+		height: 100vh;
+		width: 100vw;
+		background-color: black;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-size: 23px;
+		transition: left 0.5s cubic-bezier(0.82, 0.01, 0.77, 0.78);
+}
+	.nav-smartphone a, ul li  {
+		padding: 20px;
+	}
+	.nav-smartphone > a {
+		font-size: 23px;
+	}
+	label {
+		color: #fff;
+		font-size: 30px;
+
+	}
+	#toggled:checked + .header-smartphone .nav-smartphone {
+		left: 0;
+	}
+
 }

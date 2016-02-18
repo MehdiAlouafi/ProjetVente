@@ -63,16 +63,19 @@ p.contact-para {
 }
 
 .main-contact-content {
-  width: 1040px;
+  max-width: 1040px;
   margin: 0 auto;
   overflow: visible;
   height: 100%;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .get-in-touch {
   text-align: left;
   width: 300px;
   float: left;
+  flex-grow: 1;
 }
 
 .get-in-touch h2 {
@@ -97,6 +100,8 @@ p.contact-para {
   top: -100px;
   box-shadow: 0 0 30px black;
   z-index: 9999;
+  flex-grow: 1;
+
 }
 
 .form-contact input {
@@ -142,4 +147,31 @@ p.contact-para {
 
 .btn-submit-contact:hover {
   box-shadow: 0 0 15px rgba(190, 22, 34, 1);
+}
+
+.social-list {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 200px;
+  flex-flow: column nowrap;
+  height: 300px;
+  margin-left: 50px;
+  flex-grow: 1;
+
+}
+.social-list i {
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 1s ease-in;
+  position: relative;
+  bottom: 100px;
+}
+
+.social-list i:hover {
+  color: rgba(190, 22, 34, 1);
+  transition: all 0s ease-in-out;
 }
