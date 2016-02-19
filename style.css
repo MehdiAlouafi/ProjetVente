@@ -214,7 +214,7 @@ header form button {
 }
 
 a.btn.btn-hover {
-    left: 46px;
+    left: 64px;
 }
 
 .promises {
@@ -498,4 +498,8 @@ a[href='https://twitter.com/AMehdiW/status/700514406933749760'] {
         display: flex;
         flex-wrap: nowrap;
     }
+}
+
+.btn-fix {
+    line-height: 2.4;
 }
