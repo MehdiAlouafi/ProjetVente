@@ -72,10 +72,34 @@ p.contact-para {
   padding: 20px;
 }
 
+@media screen and (max-width:740px) {
+  .main-contact-content {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .form-contact {
+    top: 0 !important;
+    margin-top: 20px;
+
+  }
+  .get-in-touch {
+    text-align: justify !important;
+    width: 350px !important;
+    padding-left: 40px;
+  }
+
+}
+@media screen and (max-width:1053px){
+  .contact-title:after,.contact-title::before {
+    position: relative;
+    z-index: -1;
+  }
+}
+
 .get-in-touch {
   text-align: left;
   width: 300px;
-  float: left;
+  /*float: left;*/
   flex-grow: 1;
 }
 
@@ -91,7 +115,7 @@ p.contact-para {
   width: 350px;
   height: 500px;
   background-color: #2D2D2D;
-  float: left;
+  /*float: left;*/
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -155,7 +179,6 @@ p.contact-para {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
   width: 200px;
   flex-flow: column nowrap;
   height: 300px;
@@ -163,16 +186,6 @@ p.contact-para {
   flex-grow: 1;
 
 }
-.social-list i {
-  padding: 10px;
-  color: #fff;
-  cursor: pointer;
-  transition: all 1s ease-in;
-  position: relative;
-  bottom: 100px;
-}
-
-.social-list i:hover {
-  color: rgba(190, 22, 34, 1);
-  transition: all 0s ease-in-out;
+.social-list img {
+  width: 200px;
 }
