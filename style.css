@@ -266,7 +266,7 @@ footer .copyright {
         display: block;
         height: 100vh;
         /*background-color: blue;*/
-        background-image: url('images/SoGeekLogo.svg');
+        background-image: url('images/SoGeekLogo.png');
         background-repeat: no-repeat;
         background-position: 50% 50%;
         display: flex;
