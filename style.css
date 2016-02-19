@@ -30,6 +30,7 @@ display: none}
 body,html {
   margin: 0;
   padding: 0;
+	overflow-x: hidden;
 }
 * {
   box-sizing: border-box;
@@ -266,10 +267,12 @@ footer .copyright
 	.the-toggler {
 		top: 36px;
 		left: 20px;
-		color: #fff;
+		color: black;
 		position: fixed;
 		z-index: 9999;
 		cursor: pointer;
+		text-shadow: none;
+		transition: 0.7s text-shadow 0.2s ease, color 0.7s ease-in-out;
 
 
 	}
@@ -305,6 +308,11 @@ footer .copyright
 	}
 	#toggled:checked + .header-smartphone .nav-smartphone {
 		left: 0;
+	}
+	#toggled:checked + .header-smartphone .the-toggler {
+		color: #BE1622!important;
+		text-shadow: 0 0 10px #BE1622;
+
 	}
 
 }
@@ -464,4 +472,10 @@ a[href='https://twitter.com/AMehdiW/status/700514406933749760'] {
 }
 .twitter-tweet span {
 	color:#4aa3df;
+}
+@media screen and (max-width: 664px) {
+	header nav ul {
+		display: flex;
+		flex-wrap: nowrap;
+	}
 }
