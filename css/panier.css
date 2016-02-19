@@ -3,13 +3,13 @@
 \*-------------*/
 
 
-body.body-olivier {
-  background-color: #262626;
+.body-olivier {
+  background-color: #2D2D2D !important;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.container {
+.container-olivier {
   display: flex;
   width: 80%;
 }
@@ -24,7 +24,7 @@ h4, p, a {
   font-family: 'Open Sans';
 }
 
-.container.element-position h4 {
+.container-olivier.element-position h4 {
   font-size: 24px;
 }
 
@@ -134,12 +134,11 @@ a {
 }
 
 .product-display a {
-  color: #000;
+  color: #fff;
   background-color: rgb(190, 22, 34);
   margin-left: 10px;
   padding: 5px 10px;
   border: none;
-  border-radius: 100%;
 }
 
 .product-display p {
@@ -153,24 +152,38 @@ a {
 .link {
   background-image: url(../images/link.jpg);
   background-position: center;
+  color: #fff !important;
+  text-shadow: 0 0 10px black;
+  cursor: pointer;
 }
 
 .gta {
   background-image: url(../images/gta.jpg);
   background-position: center;
+  color: #fff !important;
+  text-shadow: 0 0 10px black;
+  cursor: pointer;
 }
 
 .witcher {
   background-image: url(../images/witcher.png);
   background-position: right;
+  color: #fff !important;
+  text-shadow: 0 0 10px black;
+  cursor: pointer;
 }
-
+.promise-olivier {
+  margin-top: 50px;
+}
+.footer-olivier {
+  margin-top: 50px;
+}
 /*---------------*\
   $Mediaqueries
 \*---------------*/
 
 @media all and (max-width: 600px){
-  .container.separation nav ul {
+  .container-olivier.separation nav ul {
     width: 100%;
     padding: 0;
     display: flex;
